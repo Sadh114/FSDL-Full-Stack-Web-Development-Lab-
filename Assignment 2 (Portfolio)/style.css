@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #02010a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Snow Canvas */
+#snowfall {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background: radial-gradient(circle at top, #060015, #02010a, #000);
+}
+
+/* Subtle glow fog */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0,242,255,0.06), transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Navbar */
+.glass-nav {
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    color: #00f2ff !important;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glow {
+    font-size: 3rem;
+    text-shadow: 0 0 25px #00f2ff;
+}
+
+.subtitle {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.cyber-btn {
+    margin-top: 25px;
+    padding: 12px 35px;
+    background: transparent;
+    border: 2px solid #00f2ff;
+    color: #00f2ff;
+    transition: 0.3s;
+}
+
+.cyber-btn:hover {
+    background: #00f2ff;
+    color: black;
+    box-shadow: 0 0 25px #00f2ff;
+}
+
+/* Sections */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.dark {
+    background: rgba(0,0,0,0.6);
+}
+
+.section-title {
+    color: #00f2ff;
+    margin-bottom: 50px;
+}
+
+/* 3D Skill Cards */
+.card3d {
+    margin: 15px;
+    padding: 30px;
+    border: 1px solid #00f2ff;
+    transition: 0.3s;
+}
+
+.card3d:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 0 30px #00f2ff;
+}
+
+/* Projects */
+.project-card {
+    border: 1px solid #00f2ff;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00f2ff;
+}
+
+/* Contact */
+.contact-box {
+    max-width: 500px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #00f2ff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #00f2ff;
+}
